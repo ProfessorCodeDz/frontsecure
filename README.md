@@ -7,49 +7,49 @@ You can install the library via npm:
 npm install frontsecure
 ```
 Alternatively, use the CDN version:
-```bash
-<script src="https://cdn.jsdelivr.net/npm/frontsecure@latest"></script>
+```html
+<script src="https://cdn.jsdelivr.net/gh/ProfessorCodeDz/frontsecure/frontsecure.js"></script>
 ```
 
 ## Features
 - **Prevent DevTools Access**: Detects if DevTools is opened and redirects the user.
-    ```javascript
+    ```js
     secure.devTools('https://example.com');
     ```
 - **Disable Context Menu**: Disables right-click functionality.
-    ```javascript
+    ```js
     secure.contextMenu();
     ```
 - **Prevent Viewing Source Code**: Blocks the use of `Ctrl+U` and other shortcuts.
-    ```javascript
+    ```js
     secure.viewSource();
     ```
 - **Disable Text Selection**: Prevents users from selecting text.
-    ```javascript
+    ```js
     secure.textSelect();
     ```
 - **Block Copy, Cut, and Paste**: Disables copying, cutting, and pasting of content.
-    ```javascript
+    ```js
     secure.copy();
     secure.paste();
     ```
 - **Disable Drag & Drop**: Prevents dragging and dropping.
-    ```javascript
+    ```js
     secure.dragDrop();
     ```
 - **Prevent Print Screen**: Blocks print screen and `Ctrl+P`.
-    ```javascript
+    ```js
     secure.printScreen();
     ```
 - **Disable Save Page Locally**: Disables saving the page with `Ctrl+S`.
-    ```javascript
+    ```js
     secure.savePage();
     ```
 - **Domain-Specific Execution**: Ensures the page only runs on a specific domain.
-    ```javascript
+    ```js
     secure.runLocally('https://your-domain.com', 'https://redirect.com');
     ```
 - **Run All Features**:
-    ```javascript
+    ```js
     secure.all('https://example.com', 'https://your-domain.com', 'https://example.com');
     ```    
