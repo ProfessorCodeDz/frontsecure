@@ -10,7 +10,11 @@ Alternatively, use the CDN version:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/ProfessorCodeDz/frontsecure/frontsecure.js"></script>
 ```
-
+## Init
+```js
+    import FrontSecure from 'frontsecure';
+    const secure = new FrontSecure();
+```
 ## Features
 - **Prevent DevTools Access**: Detects if DevTools is opened and redirects the user.
     ```js
